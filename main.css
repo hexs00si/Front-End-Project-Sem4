@@ -1,7 +1,7 @@
-
 body {
   box-sizing: border-box;
   max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .main-class {
@@ -31,17 +31,22 @@ body {
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
-a{
+a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
 
+#hamburger-icon {
+  display: none;
+}
 /* making my background image a part of the div , so as it gets loaded quickly  */
 .page {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 #pg1 {
   background-image: url(images/boy1.png);
@@ -137,9 +142,11 @@ a{
   padding: 1.5% 9.5%;
   outline: none;
   border: none;
-  transition: background-color 0.3s ease , color 0.3s ease , font-size 0.3s ease , padding 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease,
+    padding 0.3s ease;
 }
-#reg-button:hover , #reg-button:focus{
+#reg-button:hover,
+#reg-button:focus {
   background-color: #ffffff;
   color: #e8631c;
   font-size: 1.8em;
@@ -165,6 +172,7 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   padding: 4% 2.8%;
+  height: 20%;
 }
 .card {
   width: 23.25em;
@@ -232,8 +240,9 @@ h2 {
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
-.black-button:hover , .black-button:focus{
-  background-color:#ffffff;
+.black-button:hover,
+.black-button:focus {
+  background-color: #ffffff;
   color: #e8631c;
   font-size: 1.8em;
   cursor: grab;
@@ -326,12 +335,10 @@ footer {
   font-weight: 400;
   font-family: "Montserrat";
   font-size: 1.4rem;
-  
 }
 
 footer {
   display: flex;
-  
 }
 #p8-c1 {
   width: 40%;
@@ -352,11 +359,11 @@ footer {
   padding-top: 3.5rem;
   /* margin-right: 3rem; */
 }
-li{
-  margin-top:2% ;
+li {
+  margin-top: 2%;
   margin-bottom: 2%;
 }
-.logo-container{
+.logo-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

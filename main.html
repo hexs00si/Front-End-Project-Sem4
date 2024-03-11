@@ -6,6 +6,7 @@
     <title>Musicology</title>
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,8 +28,11 @@
       <div class="nav-elements" id="logo">
         <img src="images/Musicology-logo.png" alt="logo" />
       </div>
+      <div class="nav-elements" id="nav-toggle">
+        <img src="images/Search.png" alt="search" id="hamburger-icon" />
+      </div>
       <div class="nav-elements" id="nav-text">
-        <ul class="nav-ul">
+        <ul class="nav-ul" id="nav-links">
           <li><a href="#pg1">HOME</a></li>
           <li>PRODUCT</li>
           <li>PROMO</li>
@@ -36,10 +40,8 @@
           <li><a href="#pg8">CONTACT</a></li>
         </ul>
       </div>
-      <div class="nav-elements" id="search-logo">
-        <img src="images/Search.png" alt="search" />
-      </div>
-    </nav>
+    </nav> 
+    <script src="hamburger.js"></script>
     <div class="page" id="pg1">
       <article id="p1-article">
         <h1 id="p1-heading">Title Here</h1>
@@ -140,7 +142,7 @@
     <div class="page" id="pg4">
       <div class="image-container" id="ic1">
         <img
-          src="/Users/sushi/Desktop/finalproject/images/p4-img.png"
+          src="images/p4-img.png"
           alt="boy-dancer"
         />
       </div>
@@ -174,7 +176,7 @@
       </section>
       <div class="image-container" id="ic2">
         <img
-          src="/Users/sushi/Desktop/finalproject/images/p5-image.png"
+          src="images/p5-image.png"
           alt="boy-dancer"
         />
       </div>
@@ -239,7 +241,7 @@
         </form>
       </section>
       <!-- </div> -->
-      <footer>
+      <!-- <footer>
         <div id="p8-c1">
           <h2>Musicology</h2>
           <div class="p-text">
@@ -285,7 +287,51 @@
             <li>Privacy</li>
           </ul>
         </div>
+      </footer> -->
+      <footer>
+        <div id="p8-c1">
+          <h2>Musicology</h2>
+          <div class="p-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            aliquam labore atque consectetur quidem sint non doloremque fugiat
+          </div>
+          <div class="logo-container">
+            <img src="images/Instagram.png" alt="instagram logo" id="instagram" />
+            <img src="images/Facebook.png" alt="Facebook" id="Facebook" />
+            <img src="images/Twitter.png" alt="Twitter" id="Twitter" />
+            <img src="images/WhatsApp.png" alt="WhatsApp" id="WhatsApp" />
+          </div>
+        </div>
+        <div id="p8-c2">
+          <h2>About</h2>
+          <ul class="p-text">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Brand Guidelines</li>
+            <li>Terms and Conditions</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div id="p8-c3">
+          <h2>Services</h2>
+          <ul class="p-text">
+            <li>How to Order</li>
+            <li>Our Product</li>
+            <li>Order Status</li>
+            <li>Promo</li>
+            <li>Payment Method</li>
+          </ul>
+        </div>
+        <div id="p8-c4">
+          <h2>Other</h2>
+          <ul class="p-text">
+            <li>Contact Us</li>
+            <li>Help</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
       </footer>
+      
     </div>
   </body>
 </html>
